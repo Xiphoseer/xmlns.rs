@@ -1,0 +1,10 @@
+[package]
+name = "xmlns"
+version = "0.1.0"
+authors = ["Xiphoseer"]
+edition = "2018"
+readme = "README.md"
+license = "MPL-2.0"
+description = "(List of) Well-Known XML Namespaces"
+documentation = "https://docs.rs/xmlns"
+repository = "https://github.com/xiphoseer/xmlns.rs"
