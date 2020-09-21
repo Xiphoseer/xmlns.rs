@@ -34,8 +34,10 @@ macro_rules! DECLARE_NS_NAME {
     );
 }
 
+pub mod adobe;
 pub mod android;
 pub mod apache;
+pub mod cc;
 pub mod daisy;
 pub mod dcmi;
 pub mod eclipse;
