@@ -22,16 +22,16 @@ If you find any namespace missing, feel free to file an [issue][issue].
 [TR-xmlns]: https://w3.org/TR/xml-names
 */
 macro_rules! DECLARE_NS_NAME {
-    ($name:ident: $doc:literal: $value:literal) => (
-        DECLARE_NS_NAME!($name: $doc: $value ($value));
-    );
-    ($name:ident: $doc:literal: $doc_value:literal ($value:expr)) => (
+    ($name:ident: $doc:literal: $value:literal) => {
+        DECLARE_NS_NAME!($name: $doc: $value($value));
+    };
+    ($name:ident: $doc:literal: $doc_value:literal ($value:expr)) => {
         #[doc = $doc]
         #[doc = "<br>`"]
         #[doc = $doc_value]
         #[doc = "`"]
         pub const $name: &'static str = $value;
-    );
+    };
 }
 
 pub mod adobe;
@@ -43,8 +43,9 @@ pub mod dcmi;
 pub mod eclipse;
 pub mod ecma;
 pub mod ibm;
-pub mod ietf;
 pub mod idpf;
+pub mod ietf;
+pub mod iptc;
 pub mod iso;
 pub mod liberty;
 pub mod microsoft;
@@ -56,4 +57,3 @@ pub mod opengis;
 pub mod other;
 pub mod w3c;
 pub mod xmpp;
-pub mod iptc;

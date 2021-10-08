@@ -31,12 +31,10 @@ pub mod biztalk {
         "http://schemas.biztalk.org/btf-2-0/properties");
 }
 
-
 pub mod other {
     DECLARE_NS_NAME!(NS_PERSIST_ROWSET: "The MS-Persist Rowset":
         "urn:schemas-microsoft-com:rowset");
 }
-
 
 pub mod xaml {
     DECLARE_NS_NAME!(NS: "The XAML Namespace":

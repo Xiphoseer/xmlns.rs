@@ -65,5 +65,5 @@ pub mod xacml {
     }
 }
 
-pub mod saml;
 pub mod opendocument;
+pub mod saml;
